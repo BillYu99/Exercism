@@ -12,7 +12,7 @@ pub fn is_armstrong_number(num: u32) -> bool {
     }
 
     for i in arr {
-        sum = sum.checked_add(i.pow(count));
+        sum = sum.(i.pow(count));
     }
 
     sum == num
